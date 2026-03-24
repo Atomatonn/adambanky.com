@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Adam Banky | Front end web developer and designer based in Cleveland, Ohio</title>
+
+    <meta name="description" content="A starting template for static front-end projects + gulp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="stylesheet" href="./dist/css/styles.css">
+    <link rel="icon" type="image/png" href="./dist/img/logo.png">
+    <script src="https://kit.fontawesome.com/fb218ddc57.js" crossorigin="anonymous"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+    <style>
+
+    </style>
+
+    
+<!-- Load reCAPTCHA v3 script with your SITE key -->
+<script src="https://www.google.com/recaptcha/enterprise.js?render=6Lf6VpQsAAAAAJsIFRfVwjpjJPm55Bjg2P-LKU1m" async defer></script>
+</head>
+<body class="body">
+    <div class="contact-overlay"></div>
+    <header id="site-header" class="header">
+        <div class="container u-flex">
+            <div class="logo">
+                <a href="#home"><img src="./dist/img/logo.png" alt=""></a>
+                <!-- <img src="./dist/img/sigblack.png" alt=""> -->
+
+                <!-- <span>AB<span class="hero__period">.</span></span> -->
+            </div>
+            <nav class="main-nav">
+                <a href="#portfolio" class="main-nav__link">work</a>
+                <!-- <a href="#" class="main-nav__link">about</a> -->
+                <a href="#creations" class="main-nav__link">play</a>
+
+                <a class="main-nav__link js-contact-btn">contact</a>
+                <a href="Adam Banky Resume 2026.pdf" target="_blank" class="main-nav__link main-nav__link--resume">resume  <i class="fa-regular fa-file-lines"></i></a>
+
+                <input style="display: none;" type="checkbox" class="toggle js-theme-toggle">
+
+            </nav>
+            <i class="fas fa-bars header__hamburger js-hamburger"></i>
+        </div>
+    </header>
+<section id="home" class="hero ">
+    <div class="hero__overlay"></div>
+            <div class="hero__inner fade-in-element">
+                <div class="hero__col">
+                    <div class="hero__banner ">
+                        <div class="hero__greeting">
+
+                            <h1 class="hero__title">Looking for a<br> <span id="typewriter-text"></span>
+                            </h1>
+
+                            <p class="hero__text">
+                                I have over 10 years of experience building websites for agencies, small businesses and
+                                corporations.
+                            </p>
+                            <div class="hero__btn-container">
+                                <a href="#" class="hero__btn js-contact-btn">I'm currently available for hire<i class="fa-solid fa-message hero__btn-icon"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__col hero__col--img">
+
+                    <!-- <img class="hero__img" src="./dist/img/meWithShadows.png" alt=""> -->
+
+
+                    <video
+          id="hero-video"
+          autoplay
+          muted
+          loop
+          inline
+          poster="fallback.jpg"
+        >
+          <source src="./dist/img/herovideo.webm" type="video/mp4" />
+        </video> 
+
+                </div>
+            </div>
+
+            </div>
+
+        </section>
+    <main class="main-content">
+        
+
+        <!-- <section class="services">
+
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>What I'm Offering<span class="section-title__period">.</span></h2>
+                </div>
+                <div class="grid-container grid-container--large services__container">
+                    <div class="grid-column grid-span-6">
+                        <div class="services__block services__block--one">
+                            <h2 class="services__title">Engaging Design</h2>
+                            <p class="services__text">
+                                Your website is your digital storefront and it's important your business is represented
+                                accurately.
+                                Don't let a bad design turn users away before you even have a chance to tell them your story. Reach out for a FREE
+                                consultation for a redesign or new website.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="grid-column grid-span-6">
+                        <div class="services__block services__block--two">
+                            <h2 class="services__title">Stable Development</h2>
+                            <p class="services__text">
+                                Site speed, Search Engine Optimization and Accesibility are at the forefront of all my
+                                decisions as well as building and maintaing a clean, concise and documented codebase.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="grid-column grid-span-12">
+                        <div class="services__block services__block--three">
+                            <h2 class="services__title">Ease of mind</h2>
+                            <p class="services__text">
+                                With over 10 years of professional experience building sites for agencies, small businesses and
+                                corporations,
+                                you can have the peace of mind knowing you're dealing with someone who knows their stuff,
+                                but hey if at any time during
+                                project development you aren't happy, a full refund will be given immediatley - with no
+                                hard feelings!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section> -->
+
+
+        <section id="portfolio" class="portfolio fade-in-element">
+            <div style="width: 100%;">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>Recent Work</h2>
+                    </div>
+                
+                </div>
+                <div>
+                    <div class="splide portfolio__desktop">
+                        <!-- arrows -->
+                         <div class="arrows__wrapper"><div class="splide__arrows"></div></div>
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="portfolio__content">
+                                        <div class="portfolio__text">
+                                            <h2 class="portfolio__heading">Beyond Speech</h2>
+                                            <p class="portfolio__p">Small business website redesign created for local speech therapy center.</p>
+                                            <p>Built with <span
+                                                    class="skill-span skill-span--html">HTML</span>, <span
+                                                    class="skill-span skill-span--js">SCSS</span>, <span
+                                                    class="skill-span skill-span--js">GULP</span>, <span
+                                                    class="skill-span skill-span--js">JavaScript</span>,
+                                                    <span
+                                                    class="skill-span skill-span--js">Blender</span>. </p>
+                                            <a href="https://beyondspeechtherapycenter.com/" target="_blank" class="portfolio__link">View
+                                                Project <i class="fas fa-chevron-right hero__btn-icon"></i></a>
+                                            <!-- <a href="/project-vnp.html" class="portfolio__link">More Info <i
+                                                    class="fas fa-chevron-right hero__btn-icon"></i></a> -->
+                                        </div>
+                                        <div class="portfolio__img">
+                                            <!-- <img src="./dist/img/VIDEODRINK-LOGIN.png" alt=""> -->
+                                            <img src="./dist/img/BEYONDSPEECH.png" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="portfolio__content">
+                                        <div class="portfolio__text">
+                                            <h2 class="portfolio__heading">VIDEODRINK</h2>
+                                            <p class="portfolio__p">Side project for watching Youtube
+                                                videos with friends! Features room creation, chat room feature, video controls
+                                                synced between
+                                                users.</p> <p> Built with <span class="skill-span skill-span--html">HTML</span>, <span
+                                                    class="skill-span skill-span--css">CSS</span>, <span
+                                                    class="skill-span skill-span--js">JAVASCRIPT</span>, <span
+                                                    class="skill-span skill-span--socket">Socket.io</span>, <span
+                                                    class="skill-span skill-span--express">Express</span>, <span
+                                                    class="skill-span skill-span--blender">Blender</span> and <span
+                                                    class="skill-span skill-span--node">Node</span>. Currently hosted with <a
+                                                    href="#">Heroku App</a></p>
+                                            <a href="https://videodrink-c58bb4b55ee5.herokuapp.com" target="_blank"
+                                                class="portfolio__link">View Project <i
+                                                    class="fas fa-chevron-right hero__btn-icon"></i></a>
+                                            <!-- <a href="/project-videodrink.html" class="portfolio__link">More Info <i
+                                                    class="fas fa-chevron-right hero__btn-icon"></i></a> -->
+                                        </div>
+                                        <div class="portfolio__img">
+                                            <!-- <img src="./dist/img/VIDEODRINK-LOGIN.png" alt=""> -->
+                                            <img src="./dist/img/VIDEODRINK.png" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                    
+                                <li class="splide__slide">
+                                    <div class="portfolio__content">
+                                        <div class="portfolio__text">
+                                            <h2 class="portfolio__heading">AmTrust Financial</h2>
+                                            <p class="portfolio__p">AmTrust Financial main corporate website built within Kentico CMS.</p>
+                                            <p class="portfolio__p"> Built with <span
+                                                    class="skill-span skill-span--js">HTML</span>, <span
+                                                    class="skill-span skill-span--js">CSS</span>,
+                                                    <span
+                                                    class="skill-span skill-span--js">Javacript</span>,
+                                                    <span
+                                                    class="skill-span skill-span--js">C#</span> and
+                                                <span
+                                                    class="skill-span skill-span--js">Kentico 12</span></p>
+                                            <a href="https://amtrustfinancial.com/" target="_blank" class="portfolio__link">View Project <i
+                                                    class="fas fa-chevron-right hero__btn-icon"></i></a>
+                                            <!-- <a href="/ab.html" class="portfolio__link">More Info <i
+                                                    class="fas fa-chevron-right hero__btn-icon"></i></a> -->
+                                        </div>
+                                        <div class="portfolio__img">
+                                            <!-- <img src="./dist/img/VIDEODRINK-LOGIN.png" alt=""> -->
+                                            <img src="./dist/img/AmTrust.png" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-hero fade-in-element">
+            <div class="container">
+ <div class="section-title">
+                        <h2>Creations</h2>
+                    </div>
+        <p class="project-hero__summary">
+          A collection of 3D artwork I've made with Blender.
+        </p>
+            </div>
+      
+      </section>
+
+<section id="creations" class="splide splide-projects play-projects fade-in-element">
+        <!-- row 1 -->
+          <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+
+    <div class="play-projects__project">
+          <video
+            id="hero-video"
+            autoplay=""
+            muted=""
+            loop=""
+            inline=""
+            poster="fallback.jpg"
+            style="height: 100%; max-width: unset"
+          >
+            <source
+              src="./dist/img/playground/kidsblocks_low.webm"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        </li>
+
+                            
+                            <li class="splide__slide">
+
+        <div class="play-projects__project">
+          <video
+            id="hero-video"
+            autoplay=""
+            muted=""
+            loop=""
+            inline=""
+            poster="fallback.jpg"
+          >
+            <source
+              src="./dist/img/playground/PixelCybertruckSnow0250-0450.mkv"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        </li>
+
+                            
+                            <li class="splide__slide">
+
+        <div class="play-projects__project">
+          <video
+            id="hero-video"
+            autoplay=""
+            muted=""
+            loop=""
+            inline=""
+            poster="fallback.jpg"
+          >
+            <source
+              src="./dist/img/playground/Gulls0001-0100.webm"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        </li>
+<li class="splide__slide">
+
+        <div class="play-projects__project">
+          <video 
+            id="hero-video"
+            autoplay=""
+            muted=""
+            loop=""
+            inline=""
+            disablePictureInPicture
+            poster="fallback.jpg"
+          >
+            <source
+              src="./dist/img/playground/RATTHEFTAUTO3.webm"
+              type="video/mp4"
+              
+            />
+          </video>
+        </div>
+        </li>
+                            
+                            <li class="splide__slide">
+
+        <div class="play-projects__project play-projects__project--large">
+          <img
+            src="./dist/img/playground/WIP2.1.png"
+            class="play-projects__img"
+            alt=""
+          />
+        </div>
+        </li>
+
+                            
+                            <li class="splide__slide">
+
+        <div class="play-projects__project">
+          <img
+            src="./dist/img/playground/gez.gif"
+            class="play-projects__img"
+            alt=""
+          />
+        </div>
+        </li>
+
+        <!-- row 2 -->
+                            
+                            <li class="splide__slide">
+
+        <div class="play-projects__project">
+          <img
+            src="./dist/img/playground/spideyhouse.gif"
+            class="play-projects__img"
+            alt=""
+          />
+        </div>
+</li>
+
+                            
+                            <li class="splide__slide">
+
+        <div class="play-projects__project play-projects__project--large-2">
+          <img
+            src="./dist/img/playground/chair.png"
+            class="play-projects__img"
+            alt=""
+          />
+        </div>
+
+        </li>
+
+                            
+                            <li class="splide__slide">
+
+        <div class="play-projects__project">
+          <img
+            src="./dist/img/playground/starship.png"
+            class="play-projects__img"
+            alt=""
+          />
+        </div>
+
+                            </li>
+        
+        
+        </ul>
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__disclaimer container">
+            <p>© 2026 No rights reserved. Feel free to share or get insipiration from this site.</p>
+
+            <!-- <div class="footer__logo"><img src="./dist/img/logo3.svg" alt=""></div> -->
+
+        </div>
+    </footer>
+
+    <!--Mobile Menu-->
+    <div class="mobile-nav__container js-mobile-menu">
+        <i class="fa-solid fa-xmark js-mnav-btn mobile-nav__close-btn"></i>
+
+        <nav class="mobile-nav">
+            <a href="#portfolio" class="mobile-nav__link">work</a>
+                <!-- <a href="#" class="mobile-nav__link">about</a> -->
+                <a href="#creations" class="mobile-nav__link">play</a>
+
+                <a class="mobile-nav__link js-contact-btn">contact</a>
+                <a href="Adam Banky Resume 2026.pdf" target="_blank" class="mobile-nav__link mobile-nav__link--resume">resume  <i class="fa-regular fa-file-lines"></i></a>
+
+
+        </nav>
+    </div>
+
+
+    <!--Working contact form with recaptcha-->
+    <div class="form-slideout-container js-contact-form-wrapper">
+        <h2 class="contact-form__title">Contact Form</h2>
+        <div class="contact-form__req-instruction">
+                Required Fields
+                <div class="contact-form__req-instruction-icon">&nbsp;</div>
+              </div>
+        <i class="fa-solid fa-xmark js-contact-btn contact-form__close-btn"></i>
+        <form id="contact-form" class="contact-form__form js-contact-form">
+            <!-- <input id="this_title" type="text" name="this_title" value="" /> -->
+            <div class="l-flex">
+                <div class="contact-form__field contact-form__field--flex">
+                    <input id="name" type="text" name="name" placeholder="name"
+                        class="contact-form__input js-focus-field" autocomplete="false" required>
+                        <div class="contact-form__border"></div>
+                  <div class="contact-form__req"></div>
+                </div>
+
+                <div class="contact-form__field contact-form__field--flex">
+                    <input  id="phone"
+                    type="tel"
+                    pattern="\(\d{3}\)-\d{3}-\d{4}"
+                    name="phone"
+                    class="contact-form__input"
+                    autocomplete="false"
+                    required
+                    placeholder="(333)-333-3333">
+                    <div class="contact-form__border"></div>
+                  <div class="contact-form__req"></div>
+                </div>
+            </div>
+
+            <div class="contact-form__field">
+                <input id="email"
+                    type="email"
+                    pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                    name="email"
+                    class="contact-form__input"
+                    autocomplete="false"
+                    placeholder="email@gmail.com"
+                    required>
+                    <div class="contact-form__border"></div>
+                  <div class="contact-form__req"></div>
+            </div>
+
+            <div class="contact-form__field chosen-wrapper">
+                <select id="job" name="job" class="contact-form__input chosen-select" autocomplete="false" required data-placeholder="What service are you interested in?" multiple >
+                    <option value="website design">website design</option>
+                    <option value="logo design">logo design</option>
+                    <option value="help with an existing site">help with an existing site</option>
+                    <option value="3d art">3D Art</option>
+                    <option value="consultation">consultation</option>
+                </select>
+  <div class="contact-form__border"></div>
+                  <div class="contact-form__req"></div>
+            </div>
+
+            <div class="contact-form__field">
+                <textarea id="message" class="contact-form__input contact-form__input--textarea" name="message"
+                    placeholder="Tell me a little about the project" rows="8" cols="80" autocomplete="false"
+                    ></textarea>
+            </div>
+            <!-- <div class="g-recaptcha" data-sitekey="6LdlghkUAAAAAD-h7x0kjYoz2ODA5MTfKW-vIDmq" data-action="LOGIN"></div> -->
+            <div class="contact-form__field">
+                <!-- <input class="contact-form__input contact-form__input--submit" type="submit" value="Submit" name="post"> -->
+                <button class="contact-form__input contact-form__input--submit" type="submit" value="Submit" name="post">Send <i class="fa-solid fa-paper-plane contact-form__btn-icon"></i></button>
+               
+            </div>
+
+
+
+        </form>
+        <small style="color: #777; display: block; margin-top: 10px; text-align: left; width: 500px; max-width: 100%;line-height: 25px;">
+  This site is protected by reCAPTCHA and the Google 
+  <a href="https://policies.google.com/privacy">Privacy Policy</a> and 
+  <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+</small>
+        <div id="success-message" style="display: none; color: green;font-size: 1.5rem;">Thank you! Your message has been sent.</div>
+<div id="error-message"   style="display: none; color: red;font-size: 1.5rem;">Something went wrong. Please try again.</div>
+    </div>
+
+
+
+
+ 
+
+
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+    <script src="./dist/scripts/scripts.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <script>
+
+        $(document).ready(function() {
+  var $select = $(".chosen-select");
+
+  $select
+    .chosen({
+      width: "100%",
+      placeholder_text_multiple: "Select options...",  // fallback if data-placeholder not used
+      no_results_text: "No matches found"
+    })
+    .val([])                          // ← clear to empty array
+    .trigger("chosen:updated");       // ← refresh Chosen UI
+
+     // Your change listener
+  $select.on("change", function() {
+    var selected = $select.val() || [];
+    // Normalize in case it's string (fallback)
+    if (!Array.isArray(selected)) {
+      selected = selected ? [selected] : [];
+    }
+    console.log("Selected:", selected);
+
+    // Your valid class logic
+    if (selected.length > 0) {
+      $(".chosen-wrapper").addClass("contact-form__field--valid");  // adjust selector
+    } else {
+      $(".chosen-wrapper").removeClass("contact-form__field--valid");
+    }
+  });
+});
+
+
+
+    </script>
+    
+    <script>
+      const element = document.getElementById("phone");
+      const maskOptions = {
+        mask: "(000)-000-0000",
+      };
+      const mask = IMask(element, maskOptions);
+
+      const checkboxes = document.querySelectorAll('input[name="services"]');
+      const anchor = document.querySelector(".anchor");
+
+      function validateGroup() {
+        const anyChecked = [...checkboxes].some((cb) => cb.checked);
+
+        if (anyChecked) {
+          anchor.setCustomValidity(""); // Valid
+          // errorDisplay.textContent = '';
+        } else {
+          anchor.setCustomValidity("Please select at least one option."); // Invalid
+          // errorDisplay.textContent = 'Please select at least one option.'; // Optional fallback
+        }
+      }
+
+     
+
+      // Run on change
+      checkboxes.forEach((cb) => cb.addEventListener("change", validateGroup));
+
+      // Initial check (e.g., if pre-checked)
+      validateGroup();
+
+      const otherCheck = document.querySelector(".js-other-check");
+      const otherInput = document.querySelector(".js-other-input");
+
+      otherCheck.addEventListener("change", () => {
+        if (otherCheck.checked) {
+          otherInput.style.display = "block";
+          document.querySelector(".form__input--other").required = true;
+        } else {
+          otherInput.style.display = "none";
+          document.querySelector(".form__input--other").required = false;
+        }
+      });
+      const otherHearCheck = document.querySelectorAll("input[name='hear']");
+      const otherHearInput = document.querySelector(".js-other-hear-input");
+
+      otherHearCheck.forEach((hearCheck) => {
+        hearCheck.addEventListener("change", () => {
+          if (hearCheck.checked && hearCheck.value === "Other") {
+            otherHearInput.style.display = "block";
+            document.querySelector(".form__input--other-hear").required = true;
+          } else {
+            otherHearInput.style.display = "none";
+            document.querySelector(".form__input--other-hear").required = false;
+          }
+        });
+      });
+    </script>
+
+    <script>
+        // new Splide( '.splide' ).mount();
+   
+
+  document.addEventListener("DOMContentLoaded", function () {
+         new Splide('.splide.portfolio__desktop', {
+            type: 'loop',
+            // direction: 'ttb',
+            // height: '80vh',
+            focus: 'center',
+            perPage: 1,
+            trimSpace: false,
+            autoplay: true,
+            interval: 8000,
+            lazyload: 'sequential',
+            pauseOnHover: false,
+            arrows: true,
+            breakpoints: {
+          992: {
+            arrows: false
+          },
+          1400: {
+            arrows: false
+          },
+        }
+        }).mount();
+
+ new Splide('.splide-projects', {
+            type: "loop",
+            drag: 'free',
+            snap: false,
+            flickPower: 0,
+easingFunc: t => t,
+
+        // updateOnMove: false,
+            // direction: 'ttb',
+            // height: '10vh',
+            focus: 'center',
+            perPage: 4,
+            trimSpace: false,
+            // autoplay: true,
+            interval: 8000,
+            lazyload: 'sequential',
+            arrows: false,
+            pagination: false,
+       breakpoints: {
+          992: {
+            perPage: 1,
+          },
+          1400: {
+            perPage: 2,
+          },
+        },
+            autoScroll: {
+            speed: 0.5,
+            pauseOnHover: false,        // ← must be here!
+    pauseOnFocus: false,   
+          },
+        }).mount(window.splide.Extensions);
+
+         }); 
+
+         
+
+    </script>
+</body>
+
+</html>
