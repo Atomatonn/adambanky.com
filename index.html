@@ -23,7 +23,11 @@
 
     
 <!-- Load reCAPTCHA v3 script with your SITE key -->
-<script src="https://www.google.com/recaptcha/enterprise.js?render=6Lf6VpQsAAAAAJsIFRfVwjpjJPm55Bjg2P-LKU1m" async defer></script>
+ <script
+      src="https://www.google.com/recaptcha/api.js?render=6Lf6VpQsAAAAAJsIFRfVwjpjJPm55Bjg2P-LKU1m"
+      async
+      defer
+    ></script>
 </head>
 <body class="body">
     <div class="contact-overlay"></div>
@@ -82,9 +86,10 @@
           muted
           loop
           inline
-          poster="fallback.jpg"
+          poster="./dist/img/herofallbackimg.png"
         >
-          <source src="./dist/img/herovideo.webm" type="video/mp4" />
+          <source src="./dist/img/herovideo.webm" type="video/webm" />
+          <source src="./dist/img/herovideosafari0001-1000.mov" type="video/mov" />
         </video> 
 
                 </div>
