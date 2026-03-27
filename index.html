@@ -74,9 +74,9 @@
 
                 <div class="hero__col hero__col--img">
 
+                  <img style="display: none;" src="./dist/img/herofallbackimg.png" alt="" class="hero__fallbackimg">
 
-
-                    <video
+                    <video 
           id="hero-video"
           autoplay
           muted
@@ -84,7 +84,6 @@
           inline
           poster="./dist/img/herofallbackimg.png"
         >
-          <source src="./dist/img/herovideosafari0001-1000.mov" type="video/mov" />
           <source src="./dist/img/herovideo.webm" type="video/webm" />
         </video> 
 
@@ -683,6 +682,8 @@ easingFunc: t => t,
 
          }); 
 
+         const heroVideo = document.querySelector("#hero-video");
+         const heroFallbackImg = document.querySelector(".hero__fallbackimg");
          
          function isSafari() {
             return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
@@ -690,9 +691,13 @@ easingFunc: t => t,
 
           // Usage
           if (isSafari()) {
+            heroVideo.style.display = "none";
+            heroFallbackImg.style.display = "block";
+
             console.log("This is Safari");
             // Apply Safari-specific code or styles
           } else {
+            
             console.log("This is NOT Safari");
           }
     </script>
