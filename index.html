@@ -684,7 +684,17 @@ easingFunc: t => t,
          }); 
 
          
+         function isSafari() {
+            return /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+          }
 
+          // Usage
+          if (isSafari()) {
+            console.log("This is Safari");
+            // Apply Safari-specific code or styles
+          } else {
+            console.log("This is NOT Safari");
+          }
     </script>
 </body>
 
